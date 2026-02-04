@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram 视频控制",
+  "description": "每个视频下面会显示原生视频控制条。",
+  "version": "1.0.0",
+  "author": "Raz1ner",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://*.instagram.com/*"],
+    "js": ["injected.js"],
+    "css": ["styles.css"]
+  }]
+}
